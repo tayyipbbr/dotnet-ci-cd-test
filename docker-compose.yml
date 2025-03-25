@@ -1,0 +1,8 @@
+services:
+  api:  # Servis adı
+    build:
+      context: .  # Dockerfile'ın bulunduğu dizin
+      dockerfile: dockerfile  # Dockerfile adı (büyük-küçük harf duyarlı)
+    ports:
+      - "80:80"  # Host:Container port bağlantısı (tırnak içinde)
+    restart: always
